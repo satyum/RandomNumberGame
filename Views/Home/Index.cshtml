@@ -1,0 +1,11 @@
+﻿@model RandomNumberGame.Models.RandomNumberViewModel
+
+<h1>Random Number Guessing Game</h1>
+<p>@Model.Message</p>
+
+<form method="post">
+    <label for="Guess">Enter your guess:</label>
+    <input type="number" id="Guess" name="Guess" min="@Model.MinNumber" max="@Model.MaxNumber" required>
+    <input type="submit" value="Submit">
+</form>
+
